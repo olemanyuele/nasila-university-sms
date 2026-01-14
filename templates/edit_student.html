@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+    <div class="card shadow col-md-6 p-4">
+        <h4 class="mb-3">✏ Edit Student</h4>
+
+        <form method="POST">
+            <input class="form-control mb-3" name="name" value="{{ student.name }}" required>
+            <input class="form-control mb-3" name="email" value="{{ student.email }}" required>
+            <input class="form-control mb-3" name="course" value="{{ student.course }}" required>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-primary">💾 Update</button>
+                <a href="/dashboard" class="btn btn-secondary">❌ Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

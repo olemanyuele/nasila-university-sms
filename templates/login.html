@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4" style="width: 380px;">
+        <h3 class="text-center mb-3">🎓 NASILA UNIVERSITY</h3>
+        <p class="text-center text-muted">Student Management System</p>
+
+        <form method="POST">
+            <input class="form-control mb-3" name="username" placeholder="👤 Username" required>
+            <input class="form-control mb-3" type="password" name="password" placeholder="🔒 Password" required>
+            <button class="btn btn-primary w-100">🚀 Login</button>
+        </form>
+        <p class="text-center text-muted mt-3">Use admin / 1234</p>
+    </div>
+</div>
+{% endblock %}
