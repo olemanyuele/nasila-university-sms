@@ -1,5 +1,6 @@
-flask
-flask-sqlalchemy
-flask-login
-werkzeug
-gunicorn
+services:
+  - type: web
+    name: nasila-university-sms
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
